@@ -170,6 +170,24 @@
     <Compile Include="Teacher\Form19.Designer.cs">
       <DependentUpon>Form19.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\Form20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Form20.Designer.cs">
+      <DependentUpon>Form20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Form21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Form21.Designer.cs">
+      <DependentUpon>Form21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Form22.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Form22.Designer.cs">
+      <DependentUpon>Form22.cs</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -238,6 +256,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\Form19.resx">
       <DependentUpon>Form19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Form20.resx">
+      <DependentUpon>Form20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Form21.resx">
+      <DependentUpon>Form21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Form22.resx">
+      <DependentUpon>Form22.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>

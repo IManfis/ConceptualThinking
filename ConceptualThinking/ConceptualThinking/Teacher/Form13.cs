@@ -36,17 +36,17 @@ namespace ConceptualThinking.Teacher
             }
             if (radioButton2.Checked)
             {
-                var nForm = new Form14();
+                var nForm = new Form20();
                 nForm.FormClosed += (o, ep) => this.Close();
                 nForm.Show();
                 this.Hide();
             }
             if (radioButton3.Checked)
             {
-                //var nForm = new Form16();
-                //nForm.FormClosed += (o, ep) => this.Close();
-                //nForm.Show();
-                //this.Hide();
+                var nForm = new Form22();
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
             }
         }
     }
