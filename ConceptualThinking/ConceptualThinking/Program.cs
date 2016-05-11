@@ -74,7 +74,7 @@ namespace ConceptualThinking
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form14());
+            Application.Run(new Form17());
         }
     }
 }

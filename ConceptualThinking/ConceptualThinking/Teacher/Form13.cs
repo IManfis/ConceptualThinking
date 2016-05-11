@@ -29,7 +29,7 @@ namespace ConceptualThinking.Teacher
             }
             if (radioButton4.Checked)
             {
-                var nForm = new Form14();
+                var nForm = new Form17();
                 nForm.FormClosed += (o, ep) => this.Close();
                 nForm.Show();
                 this.Hide();

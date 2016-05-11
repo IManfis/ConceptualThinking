@@ -152,6 +152,24 @@
     <Compile Include="Teacher\Form16.Designer.cs">
       <DependentUpon>Form16.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher\Form17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Form17.Designer.cs">
+      <DependentUpon>Form17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Form18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Form18.Designer.cs">
+      <DependentUpon>Form18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teacher\Form19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher\Form19.Designer.cs">
+      <DependentUpon>Form19.cs</DependentUpon>
+    </Compile>
     <Compile Include="Teacher\Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +229,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\Form16.resx">
       <DependentUpon>Form16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Form17.resx">
+      <DependentUpon>Form17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Form18.resx">
+      <DependentUpon>Form18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teacher\Form19.resx">
+      <DependentUpon>Form19.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Teacher\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
