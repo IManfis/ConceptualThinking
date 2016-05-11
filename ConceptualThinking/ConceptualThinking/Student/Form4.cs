@@ -73,10 +73,10 @@ namespace ConceptualThinking.Student
 
                     if (result == DialogResult.Yes)
                     {
-                        //var nForm = new Form17(id);
-                        //nForm.FormClosed += (o, ep) => this.Close();
-                        //nForm.Show();
-                        //this.Hide();
+                        var nForm = new Form23(id);
+                        nForm.FormClosed += (o, ep) => this.Close();
+                        nForm.Show();
+                        this.Hide();
                     }
                 }
             }

@@ -32,6 +32,7 @@ namespace ConceptualThinking.Student
             _id = id;
             label3.Text = _number.ToString();
             label5.Text = _number1.ToString();
+            OutputWords();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -84,6 +85,11 @@ namespace ConceptualThinking.Student
                         comboBox1.Text = "Выберите первое слово";
                         comboBox2.Text = "Выберите второе слово";    
                     }
+                    else
+                    {
+                        button2.Enabled = false;
+                        button1.Visible = true;
+                    }
                 }
             }
             else
@@ -128,10 +134,20 @@ namespace ConceptualThinking.Student
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var nForm = new Form9();
-            nForm.FormClosed += (o, ep) => this.Close();
-            nForm.Show();
-            this.Hide();
+            if (_continue)
+            {
+                var nForm = new Form23(_id);
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                var nForm = new Form9();
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
+            }
         }
     }
 }

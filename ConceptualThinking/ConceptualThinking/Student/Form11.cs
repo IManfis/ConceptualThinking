@@ -111,10 +111,20 @@ namespace ConceptualThinking.Student
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var nForm = new Form10();
-            nForm.FormClosed += (o, ep) => this.Close();
-            nForm.Show();
-            this.Hide();
+            if (_continue)
+            {
+                var nForm = new Form23(_id);
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                var nForm = new Form10();
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
+            }
         }
     }
 }
