@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using ConceptualThinking.Model;
 using ConceptualThinking.Student;
+using ConceptualThinking.Teacher;
 
 namespace ConceptualThinking
 {
@@ -73,7 +74,7 @@ namespace ConceptualThinking
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form12());
+            Application.Run(new Form14());
         }
     }
 }
