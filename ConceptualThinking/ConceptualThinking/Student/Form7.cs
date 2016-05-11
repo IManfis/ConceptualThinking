@@ -64,5 +64,30 @@ namespace ConceptualThinking.Student
             nForm.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            var context = new ConceptualThinkingContext();
+
+            if (context.Experiment2Result.Any(x => x.IdUser == _id))
+            {
+                label4.Visible = true;
+            }
+            else
+            {
+                var nForm = new Form10();
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            var nForm = new Form12();
+            nForm.FormClosed += (o, ep) => this.Close();
+            nForm.Show();
+            this.Hide();
+        }
     }
 }

@@ -76,9 +76,9 @@ namespace ConceptualThinking.Student
                 else
                 {
                     WriteResultToDb();
-                    _number++;
                     if (_number != _number1)
                     {
+                        _number++;
                         OutputWords();
                         label3.Text = _number.ToString();
                         comboBox1.Text = "Выберите первое слово";
@@ -100,10 +100,13 @@ namespace ConceptualThinking.Student
 
                 var points = 0;
                 var words = context.Experiment1Data.FirstOrDefault(x => x.Id == _number);
-                if (words.CorrectWord1 == comboBox1.SelectedItem.ToString() &&
-                    words.CorrectWord2 == comboBox2.SelectedItem.ToString())
+                if (words.CorrectWord1 == comboBox1.SelectedItem.ToString())
                 {
-                    points = 1;
+                    points += 1;
+                }
+                if (words.CorrectWord2 == comboBox2.SelectedItem.ToString())
+                {
+                    points += 1;
                 }
 
 
