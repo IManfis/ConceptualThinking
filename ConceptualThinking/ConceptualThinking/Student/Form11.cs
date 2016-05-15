@@ -120,7 +120,7 @@ namespace ConceptualThinking.Student
             }
             else
             {
-                var nForm = new Form10();
+                var nForm = new Form12(_id);
                 nForm.FormClosed += (o, ep) => this.Close();
                 nForm.Show();
                 this.Hide();

@@ -16,6 +16,13 @@ namespace ConceptualThinking.Student
             WriteToDataGrid(_id);
         }
 
+        public Form9(int id)
+        {
+            InitializeComponent();
+            _id = id;
+            WriteToDataGrid(_id);
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             var nForm = new Form7();

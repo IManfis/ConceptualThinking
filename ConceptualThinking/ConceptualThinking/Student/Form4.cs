@@ -83,7 +83,7 @@ namespace ConceptualThinking.Student
             else
             {
                 context.Users.Add(new Users { Name = name, Group = groupNumber, Date = DateTime.Now });
-                //context.SaveChanges();
+                context.SaveChanges();
 
                 label4.Visible = true;
                 button3.Visible = true;
