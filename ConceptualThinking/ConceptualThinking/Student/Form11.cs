@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using ConceptualThinking.Model;
@@ -11,6 +12,7 @@ namespace ConceptualThinking.Student
         private int _number1 = 1;
         private bool _continue = false;
         private int _id = 0;
+        private List<string> _lst = new List<string>();
 
         public Form11()
         {
@@ -47,7 +49,17 @@ namespace ConceptualThinking.Student
         private void OutputWords()
         {
             var context = new ConceptualThinkingContext();
-            label6.Text = context.Experiment2Data.FirstOrDefault(x => x.Id == _number).PairNotions;
+            var stimulModel = context.Experiment2Data.ToList();
+            Random random = new Random();
+            int k;
+            k = random.Next(stimulModel.Count);
+
+            if (!_lst.Any(x => x.Equals(stimulModel[k].PairNotions)))
+            {
+                _lst.Add(stimulModel[k].PairNotions.Trim());
+            }
+
+            label6.Text = _lst.Last();
         }
 
         private void button2_Click(object sender, EventArgs e)

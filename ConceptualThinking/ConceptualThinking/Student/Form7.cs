@@ -59,7 +59,7 @@ namespace ConceptualThinking.Student
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var nForm = new Form9();
+            var nForm = new Form9(_id);
             nForm.FormClosed += (o, ep) => this.Close();
             nForm.Show();
             this.Hide();
@@ -84,7 +84,7 @@ namespace ConceptualThinking.Student
 
         private void button5_Click(object sender, EventArgs e)
         {
-            var nForm = new Form12();
+            var nForm = new Form12(_id);
             nForm.FormClosed += (o, ep) => this.Close();
             nForm.Show();
             this.Hide();

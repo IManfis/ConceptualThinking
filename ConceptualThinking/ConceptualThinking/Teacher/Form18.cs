@@ -26,6 +26,8 @@ namespace ConceptualThinking.Teacher
             });
 
             context.SaveChanges();
+
+            Close();
         }
     }
 }

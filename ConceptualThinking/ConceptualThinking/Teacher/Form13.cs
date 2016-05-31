@@ -48,6 +48,13 @@ namespace ConceptualThinking.Teacher
                 nForm.Show();
                 this.Hide();
             }
+            if (radioButton5.Checked)
+            {
+                var nForm = new Form23();
+                nForm.FormClosed += (o, ep) => this.Close();
+                nForm.Show();
+                this.Hide();
+            }
         }
     }
 }

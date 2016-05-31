@@ -41,6 +41,8 @@ namespace ConceptualThinking.Teacher
 
             context.Entry(model).State = EntityState.Modified;
             context.SaveChanges();
+
+            Close();
         }
     }
 }

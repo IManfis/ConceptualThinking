@@ -63,7 +63,7 @@ namespace ConceptualThinking.Student
         private void button2_Click(object sender, EventArgs e)
         {
             label8.Visible = false;
-            if (comboBox1.SelectedIndex > 0)
+            if (comboBox1.SelectedIndex >= 0)
             {
                 if (_number <= _number1)
                 {

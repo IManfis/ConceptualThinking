@@ -1,13 +1,14 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
 using ConceptualThinking.Model;
 
-namespace ConceptualThinking.Student
+namespace ConceptualThinking.Teacher
 {
-    public partial class Form6 : Form
+    public partial class Form23 : Form
     {
-        public Form6()
+        public Form23()
         {
             InitializeComponent();
             var context = new ConceptualThinkingContext();
@@ -17,7 +18,7 @@ namespace ConceptualThinking.Student
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var nForm = new Form4();
+            var nForm = new Form13();
             nForm.FormClosed += (o, ep) => this.Close();
             nForm.Show();
             this.Hide();
@@ -25,10 +26,18 @@ namespace ConceptualThinking.Student
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var nForm = new Form7();
-            nForm.FormClosed += (o, ep) => this.Close();
-            nForm.Show();
-            this.Hide();
+            var text = richTextBox1.Text;
+
+            var context = new ConceptualThinkingContext();
+            var model = new Settings()
+            {
+                Id = 3,
+                Name = "Теория",
+                Value = text
+            };
+
+            context.Entry(model).State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }
